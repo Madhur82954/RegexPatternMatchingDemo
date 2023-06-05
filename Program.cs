@@ -6,7 +6,7 @@ namespace RegexPatternMatchingDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter First Name : ");
+            Console.WriteLine("Enter Last Name : ");
             string name=Console.ReadLine();
             Console.WriteLine(name);
             string namepattern="^[A-Z]{1}[a-z]{2,}$";
