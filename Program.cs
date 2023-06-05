@@ -12,7 +12,7 @@ namespace RegexPatternMatchingDemo
             //string namepattern="^[A-Z]{1}[a-z]{2,}$";
             //string namepattern =  "^[0-9a-zA-Z]+[._-]{0,2}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$";
             //string namepattern = "^[0-9]{2,}[ ][0-9]{10}$";
-            string namepattern = ("^(?=.*?[A-Z])[0-9a-z].{8,}$");
+            string namepattern = ("^(?=.*?[A-Z])(?=.*?[0-9])[a-z].{8,}$");
             Regex regex = new Regex(namepattern);
             if (regex.IsMatch(name))
             {
